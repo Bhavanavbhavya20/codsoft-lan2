@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="overlay">
+            <div class="container">
+                <h1>Delicious Pizza</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#order">Order Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Welcome to Delicious Pizza</h2>
+            <p>Your favorite pizza delivered hot and fresh!</p>
+            <br>
+            <img src="B:\codesoft\pizza landing\background.jpeg">
+        </br>
+        <br>
+             <a href="#menu" class="cta">Explore Our Menu</a>
+    </br>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>At Delicious Pizza, we are passionate about delivering the best pizza experience. Our pizzas are made with the freshest ingredients and baked to perfection. we maintain hygenic pizza baking.</p>
+        </div>
+    </section>
+    
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="B:\codesoft\pizza landing\margherita.jpeg" alt="Margherita">
+                    <h3>Margherita</h3>
+                    <p>Classic margherita with fresh tomatoes and basil.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="B:\codesoft\pizza landing\Pepperoni .jpeg" alt="Pepperoni">
+                    <h3>Pepperoni</h3>
+                    <p>Loaded with spicy pepperoni and mozzarella.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="B:\codesoft\pizza landing\veggie.jpeg" alt="Veggie">
+                    <h3>Veggie</h3>
+                    <p>A mix of fresh vegetables on a cheesy base.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="B:\codesoft\pizza landing\bbq chicken.jpeg" alt="BBQ Chicken">
+                    <h3>BBQ Chicken</h3>
+                    <p>Grilled chicken with tangy BBQ sauce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <form action="submit_order.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="pizza">Select Pizza:</label>
+                <select id="pizza" name="pizza">
+                    <option value="margherita">Margherita</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="veggie">Veggie</option>
+                    <option value="bbq-chicken">BBQ Chicken</option>
+                </select>
+                
+                <button type="submit" class="cta">Place Order</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:pizza love@deliciouspizza.com">pizza love@deliciouspizza.com</a></p>
+            <p>Phone: <a href="tel:08365263432">08365263432</a></p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Delicious Pizza. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
